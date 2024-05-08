@@ -13,7 +13,7 @@ ALWAYS_ESCAPE_PREFIXES=set(["silence", "digits", "letters",
 def get_sounds():
     paths=[]
     for dirpath, _dirnames, filenames in os.walk(SOUNDS_DIR):
-        for name in sorted(filenames):
+        for name in filenames:
             path = os.path.join(dirpath, name)
             _, ext = os.path.splitext(path)
             if not ext:
