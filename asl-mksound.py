@@ -4,7 +4,7 @@ import os
 import shlex
 import sys
 
-SOUNDS_DIR="/var/lib/asterisk/sounds"
+SOUNDS_DIR="/usr/share/asterisk/sounds"
 SOUND_EXTENSIONS=set(["ulaw", "gsm", "pcm"])
 ALWAYS_ESCAPE_PREFIXES=set(["silence", "digits", "letters",
                             "phonetics", "nodenames", "rpt"])
